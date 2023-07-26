@@ -1,0 +1,140 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* FOOTER SECTION */
+footer {
+    background: var(--white);
+    margin-top: -13rem;
+    position: relative;
+    z-index: 222;
+    height: 300px;
+    padding: 4rem;
+}
+
+.footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.more-from-teach2give {
+    font-size: .7rem;
+    font-weight: 600;
+    width: 470px;
+}
+
+.more-info h2 {
+    padding-bottom: 1rem;
+}
+
+.hyper-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hyper-links .hyper-link {
+    list-style: none;
+    font-weight: 500;
+    color: #575757;
+    cursor: pointer;
+    -webkit-transition: .4s all ease;
+    -o-transition: .4s all ease;
+    transition: .4s all ease;
+}
+
+.hyper-links .hyper-link:hover {
+    color: var(--text-color);
+}
+
+.subscription-section h2 {
+    padding-bottom: 1rem;
+}
+
+.subscription-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: .6rem;
+}
+
+.subscription-form input {
+    border: none;
+    border-radius: 6px;
+    background: #c5c5c5;
+    padding: .7rem;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+}
+
+.subscription-form input:focus {
+    outline: none;
+}
+
+.subscription-form .subscribe-btn {
+    max-width: 150px;
+    float: right;
+    background: var(--green);
+    color: var(--white);
+    border: none;
+    border-radius: 6px;
+    padding: .8rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+    .more-from-teach2give {
+        width: 300px;
+    }
+
+    .more-info h2,
+    .subscription-section h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        height: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .more-from-teach2give {
+        font-size: .8rem;
+        width: 100%;
+    }
+
+    .more-info h2,
+    .subscription-section h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    footer {
+        padding: 2rem;
+    }
+}
